@@ -1,0 +1,19 @@
+.swiper_wrapper {
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #ff4655;
+  border-top: 3px solid #c40515;
+  overflow: hidden;
+}
+
+.Slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+.section {
+  width: 100%;
+  height: 75vh;
+  background-color: #ff4655;
+}
