@@ -16,6 +16,22 @@ const RoleSeparator = styled.div`
     padding-right: 15px;
     border-radius: 3px;
   }
+
+  @media screen and (max-width: 465px) {
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+  @media screen and (max-width: 319px) {
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (max-width: 283px) {
+    h2 {
+      font-size: 1.1rem;
+    }
+  }
 `;
 
 const Separator = (prop) => {

@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const ContainerInformation = styled.div`
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   width: 100%;
   background-color: #f0efef;
   display: flex;
@@ -56,6 +59,37 @@ const ContainerInformation = styled.div`
     font-weight: bold;
     &:hover {
       text-decoration: underline;
+    }
+  }
+  @media screen and (max-width: 990px) {
+    .titleSub {
+      padding: 0;
+      text-align: center;
+      word-wrap: break-word;
+    }
+    h3 {
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 796px) {
+    h3 {
+      font-size: 1.95rem;
+    }
+    .endTitle,
+    .startTitle {
+      font-size: 1rem;
+    }
+    .endTitle {
+      font-size: 0.7rem;
+    }
+  }
+  @media screen and (max-width: 319px) {
+    .titleSub p {
+      font-size: 1rem;
+    }
+    .titleSub {
+      padding-left: 5px;
+      padding-right: 5px;
     }
   }
 `;

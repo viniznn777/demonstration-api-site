@@ -40,6 +40,24 @@ const ContainerMaps = styled.div`
       text-decoration: underline;
     }
   }
+  @media screen and (max-width: 500px) {
+    .containerAllInfo img {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 473px) {
+    .descriptionMap {
+      padding: 0 25px;
+    }
+    .containerAllInfo img {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .descriptionMap {
+      font-size: 1.1rem;
+    }
+  }
 `;
 
 export default ContainerMaps;

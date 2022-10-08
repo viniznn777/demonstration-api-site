@@ -4,6 +4,7 @@ import API from "../../../services/api.js";
 import { Link } from "react-router-dom";
 import ContainerInformation from "./Styles.js";
 import TitleSub from "../../Utilities/TitleAndDescription.jsx";
+import Separator from "../../Utilities/Separator";
 
 const ContainerInfo = () => {
   const [pistolsValorant, setPistolsValorant] = useState();
@@ -33,10 +34,8 @@ const ContainerInfo = () => {
   }, []);
   return (
     <ContainerInformation>
+      <Separator>Quais são as armas do Valorant e quanto custam?</Separator>
       <div className="titleSub">
-        <div>
-          <h3>Quais são as armas do Valorant e quanto custam?</h3>
-        </div>
         <p>
           Um dos principais fatores que pode influenciar a qualidade de um FPS
           tático é o arsenal do jogo. Por conta disso, a Riot Games teve um
@@ -53,7 +52,7 @@ const ContainerInfo = () => {
           adversários ou que contam com uma cadência maior de tiros por segundo
           acabam custando mais caro.
         </p>
-        <h3>Categorias de armas no Valorant</h3>
+        <h3 className="startTitle">Categorias de armas no Valorant</h3>
         <ul>
           <li>Pistolas: Classic, Ghost, Frenzy, Shorty e Sheriff;</li>
           <li>Submetralhadoras: Stinger e Spectre;</li>
@@ -157,7 +156,7 @@ const ContainerInfo = () => {
         </div>
       ))}
       <TitleSub
-        Title="Armas pesadas – para eliminar rápidamente os adversários"
+        Title={"Armas pesadas – para eliminar rápidamente os adversários"}
         Description="As armas pesadas do VALORANT são muitas vezes utilizadas em situações
       econômicas. Tanto as escopetas como a Judge e as LMGs como a Ares
       possuem um valor baixo e muitas vezes são compradas em rounds bônus ou
@@ -185,7 +184,9 @@ const ContainerInfo = () => {
           </ul>
         </div>
       ))}
-      <h3>Agora que você já conhece todas as Armas do Valorant</h3>
+      <h3 className="endTitle">
+        Agora que você já conhece todas as Armas do Valorant
+      </h3>
       <p>
         <Link to="/characters">Veja os personagens do Valorant</Link>
       </p>

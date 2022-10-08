@@ -35,7 +35,7 @@ const ContainerInfoCharacters = () => {
       {characters?.map((item, index) => (
         <div className="containerCharacters" key={index}>
           <Separator>{item.character}</Separator>
-          <div>
+          <div className="containerImage">
             <img
               src={item.image}
               alt={item.name}

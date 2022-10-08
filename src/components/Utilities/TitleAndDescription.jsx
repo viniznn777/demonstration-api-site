@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Separator from "./Separator";
 
 const ContainerSub = styled.div`
   display: flex;
@@ -10,6 +11,7 @@ const ContainerSub = styled.div`
   p {
     font-size: 1.3rem;
     color: #494949;
+    padding: 0 8px;
   }
   h3 {
     color: #fa2e3f;
@@ -20,12 +22,34 @@ const ContainerSub = styled.div`
     padding-left: 15px;
     padding-right: 15px;
   }
+  @media screen and (max-width: 984px) {
+    text-align: center;
+    padding: 0;
+    h3 {
+      padding: 0;
+      word-wrap: break-word;
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 1.19rem;
+    }
+  }
+  @media screen and (max-width: 796px) {
+    h3 {
+      font-size: 0.99rem;
+    }
+  }
+  @media screen and (max-width: 796px) {
+    h3 {
+      font-size: 0.6rem;
+    }
+  }
 `;
 
 const TitleSub = ({ Title, Description }) => {
   return (
     <ContainerSub>
-      <h3>{Title}</h3>
+      <Separator>{Title}</Separator>
       <p>{Description}</p>
     </ContainerSub>
   );

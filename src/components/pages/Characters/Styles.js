@@ -43,6 +43,7 @@ const ContainerInfo = styled.div`
     max-width: 950px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
   }
+
   a {
     text-decoration: none;
     color: #186be7;
@@ -50,6 +51,30 @@ const ContainerInfo = styled.div`
     font-weight: bold;
     &:hover {
       text-decoration: underline;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    .containerCharacters {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .containerImage img {
+      width: 90%;
+    }
+    .containerImage {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 530px) {
+    .descriptionCharacter {
+      padding: 0 25px;
+    }
+    .descriptionCharacter p {
+      font-size: 1.1rem;
     }
   }
 `;

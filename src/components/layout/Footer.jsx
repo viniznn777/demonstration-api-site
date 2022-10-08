@@ -29,6 +29,19 @@ const FooterPage = styled.footer`
     left: 50%;
     right: 50%;
   }
+
+  @media screen and (max-width: 885px) {
+    span {
+      font-size: 0.6rem;
+    }
+  }
+  @media screen and (max-width: 545px) {
+    justify-content: center;
+    align-items: center;
+    span {
+      display: none;
+    }
+  }
 `;
 
 const Footer = () => {
