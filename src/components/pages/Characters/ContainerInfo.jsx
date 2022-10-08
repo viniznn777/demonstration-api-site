@@ -44,10 +44,10 @@ const ContainerInfoCharacters = () => {
             />
           </div>
           <ul>
-            <li>{item.origin}</li>
-            <li>{item.name}</li>
-            <li>{item.function}</li>
-            <li>{item.classification}</li>
+            <li>Origem: {item.origin}</li>
+            <li>Nome: {item.name}</li>
+            <li>Função: {item.function}</li>
+            <li>Classificação: {item.classification}</li>
           </ul>
           <div className="descriptionCharacter">
             <p>{item.description}</p>
