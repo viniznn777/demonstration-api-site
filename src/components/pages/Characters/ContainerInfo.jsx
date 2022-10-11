@@ -57,7 +57,7 @@ const ContainerInfoCharacters = () => {
       <Separator>Agora que já sabe tudo sobre VALORANT.</Separator>
       <p>
         <a
-          href="https://apivalorantgame.herokuapp.com/info"
+          href="https://api-apresentation.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
