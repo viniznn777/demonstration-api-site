@@ -37,7 +37,7 @@ const NewsButton = ({ content }) => {
         return;
       }
       new Notification("Valorant API", {
-        body: "😱😱😱 Você viu o novo personagem que lançou no Valorant? Confira aqui no nosso site ou em nossa API tudo o que ele faz. Será que o novo Controlador entra para o META?",
+        body: "😱😱😱 Você viu o novo personagem que lançou no Valorant? Confira aqui no nosso site ou em nossa API tudo o que ele faz. Será que o novo Controlador entrará para o META?",
       });
     });
   }
