@@ -1,4 +1,3 @@
-import React from "react";
 import Separator from "../../Utilities/Separator";
 import Slider from "../../Utilities/Slider";
 import styles from "./Home.module.css";

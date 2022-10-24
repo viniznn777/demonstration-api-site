@@ -7,6 +7,7 @@ import Armas from "./components/pages/Guns/Armas";
 import Mapas from "./components/pages/Maps/Mapas";
 import Personagens from "./components/pages/Characters/Personagens";
 import Footer from "./components/layout/Footer";
+import NewsButton from "./components/Utilities/NewsButton";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/maps" element={<Mapas />}></Route>
           <Route exact path="/characters" element={<Personagens />}></Route>
         </Routes>
+        <NewsButton content="Novidades" />
         <Footer />
       </Router>
     </div>
