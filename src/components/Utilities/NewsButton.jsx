@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import API from "../../services/api";
 
 const Button = styled.button`
   position: absolute;
@@ -35,11 +36,20 @@ const NewsButton = ({ content }) => {
     await checkPermission().then((isAllowed) => {
       if (!isAllowed) {
         return;
+      } else {
+        BuscarNaAPI();
       }
-      new Notification("Valorant API", {
-        body: "😱😱😱 Você viu o novo personagem que lançou no Valorant? Confira aqui no nosso site ou em nossa API tudo o que ele faz. Será que o novo Controlador entrará para o META?",
-      });
     });
+  }
+  async function BuscarNaAPI() {
+    try {
+      const response = await API.get();
+      new Notification(`${response.data[0].news[0].title}`, {
+        body: response.data[0].news[0].message,
+      });
+    } catch {
+      console.log("Tente Novamente");
+    }
   }
 };
 
